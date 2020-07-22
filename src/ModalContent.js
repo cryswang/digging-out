@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+// import Button from '@nerdwallet/react-button';
 import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import ListGroup from 'react-bootstrap/ListGroup';
@@ -14,20 +15,24 @@ function ModalContent() {
       <Carousel activeIndex={index} fade={true} data-ride={null} slide={true} controls={false} indicators={false}>
         <Carousel.Item className = "carousel-container">
           <div>
-              <h3>How to dig out after a setback</h3>
-              <p>For many, the economic fallout of the pandemic means they're digging out from debt. 
-             Tell us about your individual situation, and we'll help you find a tailored solution.</p>
-             <p>First, are your income and your job stable or at risk? Stable means you don't expect a change in employment 
-            or pay in the next 6 months. At risk means there's a chance of pay reduction or job loss in the next 6 months.</p>
-          <Button onClick={() => setIndex(1)} className = "button">LEARN HOW</Button>
+              <h3 className = "title1">How to dig out after a setback</h3>
+              <p className = "body1">Many people are struggling with their debts after losing their jobs or having their hours cut because of the pandemic.
+            If you’re worried about what you owe, use this quiz to find out what you should do next.</p>
+          <Button onClick={() => setIndex(1)} className = "learn-more-button">LEARN HOW</Button>
           </div>
         </Carousel.Item>
         <Carousel.Item className = "carousel-container">
           <div>
             <h3>Is your income and job stable or at risk?</h3>
             <ListGroup>
-                <ListGroup.Item action onClick={() => setIndex(3)}> stable</ListGroup.Item>
-                <ListGroup.Item action onClick={() => setIndex(2)}> at risk</ListGroup.Item>
+                <ListGroup.Item action onClick={() => setIndex(3)} className = "list-item">
+                    <h2>My Job is Secure</h2>
+                    you don't expect a change in employment or pay in the next 6 months
+                </ListGroup.Item>
+                <ListGroup.Item action onClick={() => setIndex(2)} className = "list-item"> 
+                <h2>My Job Is At Risk</h2>
+                you expect a pay reduction or job loss in the next 6 months.
+                </ListGroup.Item>
             </ListGroup>
             </div>
         </Carousel.Item>
@@ -44,7 +49,7 @@ function ModalContent() {
         <Carousel.Item>
           <div>
             <h3>My job is stable, and I want to pay down my debts.</h3>
-            <p>the description</p>
+            <p>Let's figure out your debt-to-income situation. Enter your debts.</p>
             <InputGroup>
             <h4>Credit card minimums</h4>
             <br></br>
@@ -86,6 +91,8 @@ function ModalContent() {
           <Button onClick={() => setIndex(4)} className = "button">Next</Button>
         </Carousel.Item>
         <Carousel.Item>
+            <h3>My job is stable, and I want to pay down my debts.</h3>
+            <p>Let's figure out your debt-to-income situation. Enter your debts.</p>
             <div>
             <InputGroup>
             <h4>Rent or mortgage payments</h4>
@@ -114,7 +121,7 @@ function ModalContent() {
                 <ListGroup.Item action onClick={() => setIndex(6)}> Between 690-719</ListGroup.Item>
                 <ListGroup.Item action> Between 630-689</ListGroup.Item>
                 <ListGroup.Item action> Below 630</ListGroup.Item>
-                <ListGroup.Item action> I don't know my score</ListGroup.Item>
+                <ListGroup.Item action> I don't know my score (<a href="https://www.nerdwallet.com/l/free-credit-score">Get your score</a>)</ListGroup.Item>
             </ListGroup>
           </div>
         </Carousel.Item>

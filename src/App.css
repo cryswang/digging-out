@@ -28,13 +28,31 @@
   color: #61dafb;
 }
 
+
+.modal-header{
+  border-bottom: 0px !important;
+  background-color:#FFF7EA !important;
+}
+
+.modal-body{
+  background-color:#FFF7EA !important;
+}
+
 .carousel-container{
   background-color:#FFF7EA;
   font-family: "Gotham";
+  padding: 20px;
 }
 
-.button{
-  background-color: #008255 !important;
+.learn-more-button{
+  background-color:#006642 !important;
+  border-color: #006642 !important;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 20px;
+  width: 200px;
+  height: 44px;
 }
 
 .list-item{
@@ -49,8 +67,24 @@
   visibility: hidden; 
 }
 
-h3{
- margin: 35px;
+.title1{
+  font-family: "Chronicle";
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.body1{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* h3{
+ margin: 5px;
+} */
+
+.list-item{
+  margin: 5px;
+  border: 0px !important;
 }
 
 @keyframes App-logo-spin {
