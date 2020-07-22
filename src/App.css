@@ -28,7 +28,7 @@
   color: #61dafb;
 }
 
-.modal{
+.carousel-container{
   background-color:#FFF7EA;
   font-family: "Gotham";
 }
@@ -47,6 +47,10 @@
 
 .carousel-indicators li {
   visibility: hidden; 
+}
+
+h3{
+ margin: 35px;
 }
 
 @keyframes App-logo-spin {
