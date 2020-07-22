@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Modal from 'react-bootstrap/Modal';
-import Choices from './Choices';
 import Button from 'react-bootstrap/Button';
+import ModalContent from './ModalContent';
 import { TITLES } from './constants';
 // import { Title, Body } from '@nerdwallet/react-typography';
 // import Button from '@nerdwallet/react-button';
@@ -31,6 +31,7 @@ function DebtModal(props) {
           size="lg"
           aria-labelledby="contained-modal-title-vcenter"
           centered
+          className = "modal"
         >
           <Modal.Header closeButton>
             {/* need a react hook to update the title */}
@@ -39,13 +40,7 @@ function DebtModal(props) {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h4>Centered Modal</h4>
-            <p>
-              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-              consectetur ac, vestibulum at eros.
-            </p>
-            <Choices/>
+            <ModalContent/>
           </Modal.Body>
           <Modal.Footer>
           {/* This button leads into the quiz. Need to use hook to unmount the button*/}

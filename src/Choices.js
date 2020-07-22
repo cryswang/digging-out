@@ -15,7 +15,7 @@ function Choices(props) {
             <ListGroup.Item action> at risk</ListGroup.Item>
             <ListGroup.Item action> option 3</ListGroup.Item>
         </ListGroup>
-      );
+        )
     }
   
   export default Choices;
