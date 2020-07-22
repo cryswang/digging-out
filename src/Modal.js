@@ -13,17 +13,17 @@ import { TITLES } from './constants';
 // click back
 
 function DebtModal(props) {
-    const [count, setCount] = useState(0);
-    const [title, setTitle] = useState(TITLES[count]);
+    // const [count, setCount] = useState(0);
+    // const [title, setTitle] = useState(TITLES[count]);
 
-    const handleNextTitleChange = () => {
-        setTitle(TITLES[count]);
-    }
+    // const handleNextTitleChange = () => {
+    //     setTitle(TITLES[count]);
+    // }
 
-    useEffect(() => {
-        console.log(("title changed"))
-        setCount(count + 1)
-      }, [title]);
+    // useEffect(() => {
+    //     console.log(("title changed"))
+    //     setCount(count + 1)
+    //   }, [title]);
 
     return (
         <Modal
@@ -34,17 +34,11 @@ function DebtModal(props) {
           className = "modal"
         >
           <Modal.Header closeButton>
-            {/* need a react hook to update the title */}
-            <Modal.Title id="contained-modal-title-vcenter">
-              {title}
-            </Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <ModalContent/>
           </Modal.Body>
           <Modal.Footer>
-          {/* This button leads into the quiz. Need to use hook to unmount the button*/}
-          <Button onClick={handleNextTitleChange} className = "button">LEARN HOW</Button>
           </Modal.Footer>
         </Modal>
       );

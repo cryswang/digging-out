@@ -41,8 +41,12 @@
   margin:5px;
 }
 
-.right.carousel-control, .left.carousel-control {
-  display: none;
+.carousel-control-prev, .carousel-control-next{
+  display: none !important;
+}
+
+.carousel-indicators li {
+  visibility: hidden; 
 }
 
 @keyframes App-logo-spin {
