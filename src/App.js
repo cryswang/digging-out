@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import './App.css';
 import DebtModal from './Modal';
 import Button from 'react-bootstrap/Button';
 
 function App() {
-  const [modalShow, setModalShow] = React.useState(false);
+  const [modalShow, setModalShow] = useState(false);
 
   return (
     <>
@@ -15,6 +15,7 @@ function App() {
       <DebtModal
         show={modalShow}
         onHide={() => setModalShow(false)}
+        backdrop="static"
       />
     </>
   );
