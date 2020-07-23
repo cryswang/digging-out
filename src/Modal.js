@@ -10,7 +10,7 @@ import '@nerdwallet/base-styles/base.css';
 // import Button from '@nerdwallet/react-button';
 
 function DebtModal(props) {
-    // const [count, setCount] = useState(0);
+    // const [show, setShow] = useState(false);
     // const [title, setTitle] = useState(TITLES[count]);
 
     // const handleNextTitleChange = () => {
@@ -23,6 +23,7 @@ function DebtModal(props) {
     //   }, [title]);
 
     return (
+      <div style = {{width: 664}}>
         <Modal
           {...props}
           size="lg"
@@ -30,11 +31,13 @@ function DebtModal(props) {
           centered
         >
           <Modal.Header closeButton>
+            {/* <img src = '/Users/cwang/Downloads/Illustrations_for_prototype/01.png'/> */}
           </Modal.Header>
           <Modal.Body>
             <ModalContent/>
           </Modal.Body>
         </Modal>
+        </div>
       );
     }
   

@@ -28,7 +28,6 @@
   color: #61dafb;
 }
 
-
 .modal-header{
   border-bottom: 0px !important;
   background-color:#FFF7EA !important;
@@ -57,6 +56,8 @@
 
 .list-item{
   margin:5px;
+  font-size: 16px;
+  color: #64666A;
 }
 
 .carousel-control-prev, .carousel-control-next{
@@ -77,6 +78,16 @@
   font-size: 16px;
   line-height: 24px;
 }
+
+.title2{
+  font-family: "Gotham";
+  font-size: 36px;
+  font-style: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #64666A;
+}
+
 
 /* h3{
  margin: 5px;
